@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For IE9 and later -->
+    <!--[if lte IE 9]>
+   		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!-- BEGIN payment-form  -->
+    <div class="payment-form">
+    	<!-- BEGIN of header -->
+    	<header>
+            <div class="header__name">
+        		<h2 class="header__title">Harold Finch</h2>
+        		<p class="header__subtitle">Your total</p>
+            </div>
+            <div class="price">
+                <span class="price__currency">$</span><!--
+             --><span class="price__value">88</span>
+            </div>
+    	</header>
+    	<!-- END of header -->
+
+        <!-- BEGIN main  -->
+        <main role="main">
+           <form action="#">
+           	<fieldset class="account-info">
+                <label>
+                    <span>Credit card number</span>
+                    <input type="number" placeholder="4321" required>
+                </label>
+                <label class="cf">
+                    <span class="cf">Expiration date</span>
+                    <select name="month">
+                        <option value="month">Month</option>
+                        <option value="12">12</option>
+                        <option value="11">11</option>
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                    <select name="year">
+                        <option value="year">Year</option>
+                        <option value="2020">2020</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                    </select>
+                </label>
+                <label class="security">
+                    <span class="security__title">Cvv</span><br>
+                    <input type="number" required>
+                    <span class="security__text" >3 or 4 digits - <a href="#">view example</a></span>
+                </label>
+	        </fieldset>
+           	<button class="btn" type="submit"><span>Pay</span></button>
+           </form>
+        </main>
+        <!-- END main -->
+        <!-- BEGIN of footer -->
+        <footer>
+        	<a href="#">Cancel order</a>
+        </footer>
+        <!-- END of footer -->
+    </div>
+    <!-- END payment-form -->
+</body>
+</html>
